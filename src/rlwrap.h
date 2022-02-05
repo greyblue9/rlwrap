@@ -59,7 +59,7 @@
 
 
 
-#if TIME_WITH_SYS_TIME
+#if HAVE_SYS_TIME_H
 # include <sys/time.h>
 # include <time.h>
 #else
@@ -110,7 +110,7 @@
 #  include <regex.h>
 #endif
 
-#if STDC_HEADERS
+#if 1
 #  include <string.h>
 #else
 #  ifndef HAVE_STRRCHR
